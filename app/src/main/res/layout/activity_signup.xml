@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/img006"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        tools:context=".MainActivity" >
+
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtlastname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="desired_username"
+            android:inputType="textPersonName"
+            android:singleLine="true" />
+
+
+        <EditText
+            android:id="@+id/edtfirstname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edtlastname"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="enter_your_first_name"
+            android:inputType="textPersonName"
+            android:singleLine="true" >
+        <requestFocus />
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/edtPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edtUsername"
+            android:layout_below="@+id/edtUsername"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:hint="enter_password"
+            android:inputType="textPassword"
+            android:singleLine="true" >
+
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/edtConfirmPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edtPass"
+            android:layout_below="@+id/edtPass"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:hint="re_enter_password"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edtConfirmPass"
+            android:layout_below="@+id/edtConfirmPass"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:hint="enter your no"
+            android:inputType="number"
+            android:singleLine="true" />
+
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/no"
+            android:layout_below="@+id/no"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="enter_valid_email_id_optional_"
+            android:inputType="textEmailAddress"
+            android:singleLine="true" />
+
+        <RadioGroup
+
+            android:id="@+id/role"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtEmail"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+
+                android:id="@+id/seller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seller"
+                android:textColor="#964B00"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"
+                android:layout_marginRight="16dp"
+                />
+
+            <RadioButton
+
+                android:id="@+id/buyer"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Buyer"
+                android:textSize="15sp"
+                android:textColor="#964B00"
+                android:fontFamily="sans-serif"
+                android:layout_marginRight="16dp"
+                />
+
+
+            <RadioButton
+
+                android:id="@+id/pickup"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Pickup"
+                android:textSize="15sp"
+                android:textColor="#964B00"
+                android:fontFamily="sans-serif"
+
+                />
+
+        </RadioGroup>
+        <EditText
+            android:id="@+id/edtlastname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edtUsername"
+            android:layout_below="@+id/edtfirstname"
+            android:layout_marginTop="13dp"
+            android:ems="10"
+            android:hint="enter_last_name"
+            android:inputType="textPersonName"
+            android:singleLine="true" />
+
+        <TextView
+
+            android:id="@+id/privacy"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/role"
+            android:layout_marginTop="15dp"
+            android:text="@string/priv"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif"
+            android:textColorHighlight="#121212"
+
+            />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/privacy"
+            android:layout_below="@+id/privacy"
+            android:layout_marginTop="24dp"
+            android:text="register"
+            android:background="#BC8F8F"
+            android:onClick="register"/>
+
+       <TextView
+
+           android:id="@+id/txt1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Already a user ? "
+           android:fontFamily="sans-serif"
+           android:textSize="20sp"
+           android:layout_below="@+id/button1"
+           android:layout_marginTop="16dp"
+           android:layout_marginLeft="60dp"
+
+           />
+
+        <TextView
+
+            android:id="@+id/login"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/txt1"
+            android:layout_below="@+id/button1"
+            android:text="Login"
+            android:textColor="#964B00"
+            android:fontFamily="sans-serif"
+            android:textSize="20sp"
+            android:onClick="LoginClick"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_error_message_display"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/error_message"
+            android:visibility="invisible" />
+
+
+        <ProgressBar
+            android:id="@+id/pb_loading_indicator"
+            android:layout_height="42dp"
+            android:layout_width="42dp"
+            android:layout_gravity="center"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Garbage Collection</string>
+    <string name="error_message">Error : Something is wrong </string>
+    <string name="priv">By proceeding you also agree to the Terms of Service and Privacy Policy</string>
+    <string name="categoryName">Choose a category</string>
+    <string name="info">Want to Save More ? </string>
+    <string name="confirmation"> Agree to pay 50 Rs on next pickup to the pickup boy</string>
+    <string name="dumpyard_address">Old Kachara Depot Indira Nagar, Kothrud, Pune, Maharashtra 411038</string>
+    <string name="contactPerson"> Santosh Sahu 9011622145</string>
+
+    <string-array name="category">
+        <item>Domestic Waste</item>
+        <item>Plastic</item>
+        <item>Cooking Oil</item>
+        <item>Waste food product</item>
+    </string-array>
+</resources>

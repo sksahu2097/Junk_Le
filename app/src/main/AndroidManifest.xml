@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.logincheck">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/img002"
+        android:label="JUNK_ले"
+        android:roundIcon="@drawable/img002"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".GetStock"></activity>
+        <activity android:name=".OrderConfirmation" />
+        <activity android:name=".BuyingRequest" />
+        <activity android:name=".signup" />
+        <activity android:name=".pickup_boy" />
+        <activity android:name=".ContactUs" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".membership" />
+        <activity android:name=".SellingRequest" />
+        <activity android:name=".DashboardMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

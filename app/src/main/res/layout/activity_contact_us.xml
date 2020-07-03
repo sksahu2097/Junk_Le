@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/img006">
+
+    <TextView
+        android:id="@+id/contact_form_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="16dp"
+        android:text="CONTACT US"
+        android:textColor="#964B00"
+        android:textSize="35sp"
+        android:typeface="serif" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/img001" />
+
+
+    <EditText
+
+        android:id="@+id/edtname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColorHint="#e7e4e4"
+        android:layout_marginTop="35dp"
+        />
+
+    <EditText
+
+        android:id="@+id/edtEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Email"
+        android:textColorHint="#e7e4e4"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+
+        android:id="@+id/edtno"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Phone"
+        android:textColorHint="#e7e4e4"
+        android:inputType="phone" />
+
+    <EditText
+
+        android:id="@+id/edtmessage"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:breakStrategy="balanced"
+        android:fitsSystemWindows="true"
+        android:gravity="top"
+        android:hint="Your Message"
+        android:inputType="textMultiLine"
+        android:padding="5dp"
+        android:singleLine="false"
+        android:textColorHint="#e7e4e4" />
+
+
+    <Button
+
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="#BC8F8F"
+        android:elevation="4dp"
+        android:onClick="onSubmit"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:text="Submit"
+        android:textColor="#121212" />
+
+    <ProgressBar
+        android:id="@+id/pb_loading_indicator"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:visibility="invisible" />
+
+
+</LinearLayout>

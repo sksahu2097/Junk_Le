@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/img006"
+    android:scaleType="centerCrop"
+    android:elevation="01dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:padding="20dp">
+
+        <RadioGroup
+
+            android:id="@+id/role"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+
+            >
+            <RadioButton
+
+                android:id="@+id/seller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seller"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"
+
+                android:textColor="#964B00"
+                android:layout_marginLeft="40dp"
+
+                />
+
+            <RadioButton
+
+                android:id="@+id/buyer"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Buyer"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#964B00"
+                android:layout_marginLeft="20dp"
+
+                />
+
+            <RadioButton
+
+                android:id="@+id/pickup"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Pickup"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#964B00"
+                android:layout_marginLeft="40dp"
+
+                />
+
+        </RadioGroup>
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:id="@+id/label1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter UserName"
+                android:fontFamily="sans-serif"
+                android:textColor="#964B00"
+
+                android:textSize="17sp"/>
+
+            <EditText
+
+                android:id="@+id/usr"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@+id/label1"
+                android:hint="Username"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+
+            >
+            <TextView
+
+                android:id="@+id/label2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+
+                android:fontFamily="sans-serif"
+                android:textColor="#964B00"
+                android:textSize="17sp"
+
+                />
+
+            <EditText
+
+                android:id="@+id/pwd"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@+id/label2"
+                android:hint="password"
+                android:inputType="textPassword"
+
+                />
+        </LinearLayout>
+
+
+        <Button
+
+            android:id="@+id/login"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text=" Login "
+            android:background="#BC8F8F"
+            android:textSize="22sp"
+            android:layout_marginTop="40dp"/>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="60dp"
+            >
+            <TextView
+
+                android:id="@+id/newuser"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="New User ? "
+                android:fontFamily="sans-serif"
+                android:textSize="20sp"
+
+                />
+
+            <TextView
+
+                android:id="@+id/signup"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Sign Up"
+                android:textColor="#964B00"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif"
+                android:layout_toRightOf="@+id/newuser"
+                android:onClick="signup"
+
+                />
+        </RelativeLayout>
+
+        <TextView
+
+            android:id="@+id/url_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_error_message_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/error_message"
+            android:textSize="22sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_github_search_results_json"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            />
+
+        <ProgressBar
+            android:id="@+id/pb_loading_indicator"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+</RelativeLayout>
